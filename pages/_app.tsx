@@ -6,6 +6,7 @@ import '@/styles/index.css'
 import '@/styles/global.css'
 import Head from 'next/head';
 import { Auth0Provider } from '@auth0/auth0-react'
+import SEO from '@/components/seo';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       clientId={String(process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID)}
       domain={String(process.env.NEXT_PUBLIC_AUTH0_DOMAIN)}
     >
+      <SEO />
       <Head>
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon/favicon-32x32.png" />
@@ -23,6 +25,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           attribute='class'
           defaultTheme='dark'
         >
+          
           <Component {...pageProps} />  
           <Analytics />
         </NextThemesProvider>

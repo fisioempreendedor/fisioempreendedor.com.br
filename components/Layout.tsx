@@ -1,16 +1,11 @@
 import { Header } from '@/components'
-import { NAME } from '@/utils/constants';
-import Head from 'next/head';
 import { ButtonHelp } from './Button';
 import { Card, CardFooter } from '@nextui-org/react';
 
-const Layout = ({ children, title }: { children: React.ReactNode; title: string; }) => {
+const Layout = ({ children, title }: { children: React.ReactNode; title?: string; }) => {
   const date = new Date();
   return (
     <>
-      <Head>
-        <title>{`${title} | ${NAME}`}</title>
-      </Head>
       <div className='flex flex-col min-h-screen justify-between'>
         <div>
           <Header />

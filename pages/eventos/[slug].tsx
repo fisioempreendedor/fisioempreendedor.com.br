@@ -2,12 +2,13 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import { Layout} from '@/components'
 import { getEventsBySlug, getAllEvents } from '@/pages/api/events'
-import Head from 'next/head'
 import markdownToHtml from '@/utils/markdownToHtml'
 import EventsType from '@/types/events'
 import { BreadcrumbItem, Breadcrumbs, Card, CardBody, Spinner } from "@nextui-org/react";
 import { Detail } from '@/components/Events'
 import markdownStyles from '@/styles/markdown-styles.module.css'
+import { ROLE } from '@/utils/constants'
+import { NextSeo } from 'next-seo'
 
 const links = [
   {
@@ -24,7 +25,6 @@ export default function Events({ events }: {
   events: EventsType
 }) {
   const router = useRouter()
-  const title = `${events.title}`
   if (!router.isFallback && !events?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -35,40 +35,49 @@ export default function Events({ events }: {
   })
 
   return (
-    <Layout title={title}>
-      {router.isFallback ? (
-        <Spinner className='w-full flex h-[calc(100vh-65px)] align-items' color="default" size="lg"/>
-      ) : (
-        <article>
-          <Head>
-            <meta property="og:image" content={events.ogImage.url} />
-          </Head>
-          <div className='flex flex-col gap-4'>
-            <Breadcrumbs variant='solid'>
-              {links.map(link => (
-                <BreadcrumbItem key={link.name} href={link.url}>
-                  {link.name}
-                </BreadcrumbItem>
-              ))}
-            </Breadcrumbs>
-            <div className='flex flex-col gap-4 lg:flex-row'>
-              <div className='flex flex-col w-full gap-4 lg:max-w-md'>
-                <Detail nextEvent={events} />
+    <>
+      <NextSeo
+        title={`${events.title} | ${ROLE}`}
+        description={events.excerpt}
+        openGraph={{
+          title: `${events.title} | ${ROLE}`,
+          description: events.excerpt,
+          url: "https://www.fisioempreendedor.com.br/eventos",
+          site_name: `Carol Lima - ${ROLE}`,
+        }}
+      />
+      <Layout>
+        {router.isFallback ? (
+          <Spinner className='w-full flex h-[calc(100vh-65px)] align-items' color="default" size="lg"/>
+        ) : (
+          <article>
+            <div className='flex flex-col gap-4'>
+              {/* <Breadcrumbs variant='solid'>
+                {links.map(link => (
+                  <BreadcrumbItem key={link.name} href={link.url}>
+                    {link.name}
+                  </BreadcrumbItem>
+                ))}
+              </Breadcrumbs> */}
+              <div className='flex flex-col gap-4 lg:flex-row'>
+                <div className='flex flex-col w-full gap-4 lg:max-w-md'>
+                  <Detail nextEvent={events} />
+                </div>
+                <Card className='w-full p-4'>
+                  <CardBody className="max-w-4xl mx-auto p-4">
+                    <h1 className="text-3xl w-full font-bold text-secondary">{events.title}</h1>
+                    <div
+                      className={markdownStyles['markdown']}
+                      dangerouslySetInnerHTML={{ __html: events.content }}
+                    />
+                  </CardBody>
+                </Card>
               </div>
-              <Card className='w-full p-4'>
-                <CardBody className="max-w-4xl mx-auto p-4">
-                  <h1 className="text-3xl w-full font-bold text-secondary">{events.title}</h1>
-                  <div
-                    className={markdownStyles['markdown']}
-                    dangerouslySetInnerHTML={{ __html: events.content }}
-                  />
-                </CardBody>
-              </Card>
             </div>
-          </div>
-        </article>
-      )}
-    </Layout>
+          </article>
+        )}
+      </Layout>
+    </>
   )
 }
 
