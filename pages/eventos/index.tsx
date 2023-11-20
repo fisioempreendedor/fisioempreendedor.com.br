@@ -2,7 +2,7 @@ import { Layout } from '@/components'
 import { Events } from '@/components/Cards';
 import { getAllEvents } from '@/pages/api/events'
 import EventsType from '@/types/events'
-import { ROLE } from '@/utils/constants';
+import { NAME } from '@/utils/constants';
 import { Card, CardBody, Divider, Link, CardFooter } from '@nextui-org/react';
 import { NextSeo } from 'next-seo';
 
@@ -11,13 +11,13 @@ export default function EventsPage({ allEvents }: { allEvents: EventsType[]; }) 
   return (
     <>
       <NextSeo
-        title={`Eventos | ${ROLE}`}
+        title={`Eventos | ${NAME}`}
         description="Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas."
         openGraph={{
-          title: `Eventos | ${ROLE}`,
+          title: `Eventos | ${NAME}`,
           description: "Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas.",
           url: "https://www.fisioempreendedor.com.br/eventos",
-          site_name: `Carol Lima - ${ROLE}`,
+          site_name: `Carol Lima - ${NAME}`,
         }}
       />
       <Layout>

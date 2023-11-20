@@ -7,7 +7,7 @@ import EventsType from '@/types/events'
 import { BreadcrumbItem, Breadcrumbs, Card, CardBody, Spinner } from "@nextui-org/react";
 import { Detail } from '@/components/Events'
 import markdownStyles from '@/styles/markdown-styles.module.css'
-import { ROLE } from '@/utils/constants'
+import { NAME } from '@/utils/constants'
 import { NextSeo } from 'next-seo'
 
 const links = [
@@ -25,6 +25,7 @@ export default function Events({ events }: {
   events: EventsType
 }) {
   const router = useRouter()
+  const title = `${events.title} | ${NAME}`
   if (!router.isFallback && !events?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -37,13 +38,19 @@ export default function Events({ events }: {
   return (
     <>
       <NextSeo
-        title={`${events.title} | ${ROLE}`}
+        title={title}
         description={events.excerpt}
         openGraph={{
-          title: `${events.title} | ${ROLE}`,
+          title: title,
           description: events.excerpt,
-          url: `https://www.fisioempreendedor.com.br/eventos${events.ogImage.url}`,
-          site_name: `Carol Lima - ${ROLE}`,
+          site_name: title,
+          url: `https://www.fisioempreendedor.com.br/eventos/${events.slug}`,
+          images: [
+            {
+              url: `https://www.fisioempreendedor.com.br/eventos${events.ogImage.url}`,
+              alt: title,
+            },
+          ],
         }}
       />
       <Layout>

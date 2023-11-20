@@ -2,20 +2,20 @@ import { Layout} from '@/components'
 import { getAllPosts } from '@/pages/api/posts'
 import Post from '@/types/post'
 import { Articles } from '@/components/Cards';
-import { ROLE } from '@/utils/constants';
+import { NAME } from '@/utils/constants';
 import { NextSeo } from 'next-seo';
 
 export default function ArticlesPage({ allPosts }: { allPosts: Post[]; }) {
   return (
     <>
       <NextSeo
-        title={`Artigos | ${ROLE}`}
+        title={`Artigos | ${NAME}`}
         description="Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas."
         openGraph={{
-          title: `Artigos | ${ROLE}`,
+          title: `Artigos | ${NAME}`,
           description: "Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas.",
           url: "https://www.fisioempreendedor.com.br/artigos",
-          site_name: `Carol Lima - ${ROLE}`,
+          site_name: `Carol Lima - ${NAME}`,
         }}
       />
       <Layout>

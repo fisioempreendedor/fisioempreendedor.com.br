@@ -1,18 +1,18 @@
 import { Layout } from '@/components'
 import { Depositions } from '@/components/Cards'
-import { ROLE } from '@/utils/constants'
+import { NAME } from '@/utils/constants'
 import { NextSeo } from 'next-seo'
 
 const TestimonialsPage = () => (
   <>
     <NextSeo
-      title={`Depoimentos | ${ROLE}`}
+      title={`Depoimentos | ${NAME}`}
       description="Alguns relatos de ex-alunos e clientes."
       openGraph={{
-        title: `Depoimentos | ${ROLE}`,
+        title: `Depoimentos | ${NAME}`,
         description: "Alguns relatos de ex-alunos e clientes.",
         url: "https://www.fisioempreendedor.com.br/depoimentos",
-        site_name: `Carol Lima - ${ROLE}`,
+        site_name: `Carol Lima - ${NAME}`,
       }}
     />
     <Layout title="Depoimentos">

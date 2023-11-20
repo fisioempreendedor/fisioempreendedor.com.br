@@ -7,7 +7,7 @@ import type PostType from '@/types/post'
 import { BreadcrumbItem, Breadcrumbs, Card, CardBody, Spinner, User } from "@nextui-org/react";
 import markdownStyles from '@/styles/markdown-styles.module.css'
 import Comment from '@/components/Comment'
-import { ROLE } from '@/utils/constants'
+import { NAME } from '@/utils/constants'
 import { NextSeo } from 'next-seo'
 
 const links = [
@@ -25,6 +25,7 @@ export default function Post({ post }: {
   post: PostType
 }) {
   const router = useRouter()
+  const title = `${post.title} | ${NAME}`;
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -35,13 +36,19 @@ export default function Post({ post }: {
   return (
     <>
       <NextSeo
-        title={`${post.title} | ${ROLE}`}
+        title={title}
         description={post.excerpt}
         openGraph={{
-          title: `${post.title} | ${ROLE}`,
+          title: title,
           description: post.excerpt,
-          url: `https://www.fisioempreendedor.com.br/artigos${post.ogImage.url}`,
-          site_name: `Carol Lima - ${ROLE}`,
+          site_name: title,
+          url: `https://www.fisioempreendedor.com.br/artigos/${post.slug}`,
+          images: [
+            {
+              url: `https://www.fisioempreendedor.com.br/artigos${post.ogImage.url}`,
+              alt: title,
+            },
+          ],
         }}
       />
       <Layout>

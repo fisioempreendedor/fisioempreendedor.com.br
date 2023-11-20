@@ -1,19 +1,19 @@
 import { Layout } from '@/components'
 import { downloads } from '@/public/data/downloads/data'
-import { ROLE } from '@/utils/constants'
+import { NAME } from '@/utils/constants'
 import { Accordion, AccordionItem, Link, Card, CardBody } from '@nextui-org/react'
 import { NextSeo } from 'next-seo'
 
 const DownloadsPage = () => (
   <>
     <NextSeo
-      title={`Materiais Gratuitos | ${ROLE}`}
+      title={`Materiais Gratuitos | ${NAME}`}
       description="Material disponível para download gratuitamente."
       openGraph={{
-        title: `Materiais Gratuitos | ${ROLE}`,
+        title: `Materiais Gratuitos | ${NAME}`,
         description: "Material disponível para download gratuitamente.",
         url: "https://www.fisioempreendedor.com.br/materiais-gratuitos",
-        site_name: `Carol Lima - ${ROLE}`,
+        site_name: `Carol Lima - ${NAME}`,
       }}
     />
     <Layout>
