@@ -11,7 +11,7 @@ const config = {
     site_name: `Carol Lima - ${ROLE}`,
     images: [
       {
-        url: "https://fisioempreendedor.com.br/images/logo/fisio-light.webp",
+        url: "https://fisioempreendedor.com.br/assets/logo/fisio-light.webp",
         alt: `Carol Lima - ${ROLE}`,
       },
     ],

@@ -42,7 +42,7 @@ export default function Events({ events }: {
         openGraph={{
           title: `${events.title} | ${ROLE}`,
           description: events.excerpt,
-          url: "https://www.fisioempreendedor.com.br/eventos",
+          url: `https://www.fisioempreendedor.com.br/eventos${events.ogImage.url}`,
           site_name: `Carol Lima - ${ROLE}`,
         }}
       />

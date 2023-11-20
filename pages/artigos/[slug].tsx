@@ -40,7 +40,7 @@ export default function Post({ post }: {
         openGraph={{
           title: `${post.title} | ${ROLE}`,
           description: post.excerpt,
-          url: "https://www.fisioempreendedor.com.br/artigos",
+          url: `https://www.fisioempreendedor.com.br/artigos${post.ogImage.url}`,
           site_name: `Carol Lima - ${ROLE}`,
         }}
       />
