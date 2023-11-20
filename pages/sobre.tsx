@@ -8,11 +8,11 @@ import { NextSeo } from 'next-seo'
 const AboutPage = () => (
   <>
     <NextSeo
-      title={`Sobre | ${ROLE}`}
-      description="Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas."
+      title={`Carol Lima | ${ROLE}`}
+      description="Sou uma Fisioterapeuta e empresária que tem como propósito ajudar Fisioterapeutas a abrirem, gerenciarem e expandirem suas clínicas com mais eficiência, êxito e dinheiro no bolso."
       openGraph={{
-        title: `Sobre | ${ROLE}`,
-        description: "Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas.",
+        title: `Carol Lima | ${ROLE}`,
+        description: "Sou uma Fisioterapeuta e empresária que tem como propósito ajudar Fisioterapeutas a abrirem, gerenciarem e expandirem suas clínicas com mais eficiência, êxito e dinheiro no bolso.",
         url: "https://www.fisioempreendedor.com.br/sobre",
         site_name: `Carol Lima - ${ROLE}`,
       }}

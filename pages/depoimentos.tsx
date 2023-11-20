@@ -7,10 +7,10 @@ const TestimonialsPage = () => (
   <>
     <NextSeo
       title={`Depoimentos | ${ROLE}`}
-      description="Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas."
+      description="Alguns relatos de ex-alunos e clientes."
       openGraph={{
         title: `Depoimentos | ${ROLE}`,
-        description: "Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas.",
+        description: "Alguns relatos de ex-alunos e clientes.",
         url: "https://www.fisioempreendedor.com.br/depoimentos",
         site_name: `Carol Lima - ${ROLE}`,
       }}

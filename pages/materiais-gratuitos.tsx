@@ -8,10 +8,10 @@ const DownloadsPage = () => (
   <>
     <NextSeo
       title={`Materiais Gratuitos | ${ROLE}`}
-      description="Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas."
+      description="Material disponível para download gratuitamente."
       openGraph={{
         title: `Materiais Gratuitos | ${ROLE}`,
-        description: "Mentoria e Educação em Gestão Empresarial especializadas em Fisioterapeutas.",
+        description: "Material disponível para download gratuitamente.",
         url: "https://www.fisioempreendedor.com.br/materiais-gratuitos",
         site_name: `Carol Lima - ${ROLE}`,
       }}
