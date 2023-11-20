@@ -1,0 +1,6 @@
+export { default as Instagram } from './Instagram'
+export { default as Dark } from './Dark'
+export { default as Light } from './Light'
+export { default as WhatsApp } from './WhatsApp'
+export { default as Email } from './Email'
+export { default as Delete } from './Delete'
