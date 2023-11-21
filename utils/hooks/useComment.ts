@@ -9,7 +9,7 @@ export default function useComments() {
   const { getAccessTokenSilently } = useAuth0()
   const [text, setText] = useState('')
 
-  const { data: comments, mutate } = useSWR<Comment[]>(
+  const { data, mutate } = useSWR<Comment[]>(
     '/api/comment',
     fetcher,
     { fallbackData: [] }
@@ -53,5 +53,5 @@ export default function useComments() {
     }
   }
 
-  return { text, setText, comments, onSubmit, onDelete }
+  return { text, setText, data, onSubmit, onDelete }
 }
