@@ -37,7 +37,7 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
                     </Button>
                   )}
                 </div>
-                {comments?.length < index && <Divider />}
+                {comments?.length > index && <Divider />}
               </div>
             )
           })}
