@@ -30,10 +30,10 @@ export default function Events({ events }: {
     return <ErrorPage statusCode={404} />
   }
 
-  links.push({
+  const linksConcat = links.concat({
     name: events.title,
     url: events.slug
-  })
+  });
 
   return (
     <>
@@ -59,13 +59,13 @@ export default function Events({ events }: {
         ) : (
           <article>
             <div className='flex flex-col gap-4'>
-              {/* <Breadcrumbs variant='solid'>
-                {links.map(link => (
+              <Breadcrumbs variant='solid'>
+                {linksConcat.map(link => (
                   <BreadcrumbItem key={link.name} href={link.url}>
                     {link.name}
                   </BreadcrumbItem>
                 ))}
-              </Breadcrumbs> */}
+              </Breadcrumbs>
               <div className='flex flex-col gap-4 lg:flex-row'>
                 <div className='flex flex-col w-full gap-4 lg:max-w-md'>
                   <Detail nextEvent={events} />

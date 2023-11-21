@@ -19,9 +19,6 @@ const ButtonRegistry = ({ url = "/", type = 'default' }: { url: string; type?: s
           FAÇA SUA INSCRIÇÃO
         </Link>
       </div>
-      <p className="text-xs">
-        * Até 30 de novembro
-      </p>
     </div>
   )
 }

@@ -29,10 +29,10 @@ export default function Post({ post }: {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  links.push({
+  const linksConcat = links.concat({
     name: post.title,
     url: post.slug
-  })
+  });
   return (
     <>
       <NextSeo
@@ -56,16 +56,13 @@ export default function Post({ post }: {
           <Spinner className='w-full flex h-[calc(100vh-65px)] align-items' color="default" size="lg"/>
         ) : (
           <article className='flex flex-col gap-4'>
-            {/* <Head>
-              <meta property="og:image" content={post.ogImage.url} />
-            </Head> */}
-            {/* <Breadcrumbs variant='solid'>
-              {links.map(link => (
+            <Breadcrumbs variant='solid'>
+              {linksConcat.map(link => (
                 <BreadcrumbItem key={link.name} href={link.url}>
                   {link.name}
                 </BreadcrumbItem>
               ))}
-            </Breadcrumbs> */}
+            </Breadcrumbs>
             <Card className='w-full p-4'>
               <CardBody className="flex flex-col gap-8 p-4 items-start">
                 <h1 className="flex text-3xl w-full font-bold text-secondary">{post.title}</h1>
@@ -79,9 +76,9 @@ export default function Post({ post }: {
                 />
               </CardBody>
             </Card>
-            <Card className='flex flex-col gap-8 p-8'>
+            {/* <Card className='flex flex-col gap-8 p-8'>
               <Comment post={post} />
-            </Card>
+            </Card> */}
           </article>
         )}
       </Layout>
