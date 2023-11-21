@@ -9,17 +9,7 @@ import { Detail } from '@/components/Events'
 import markdownStyles from '@/styles/markdown-styles.module.css'
 import { NAME } from '@/utils/constants'
 import { NextSeo } from 'next-seo'
-
-const links = [
-  {
-    name: 'Home',
-    url: '/'
-  },
-  {
-    name: 'Eventos',
-    url: '/eventos'
-  },
-]
+import generateBreadcrumb from '@/utils/generateBreadcrumb'
 
 export default function Events({ events }: {
   events: EventsType
@@ -30,7 +20,7 @@ export default function Events({ events }: {
     return <ErrorPage statusCode={404} />
   }
 
-  const linksConcat = links.concat({
+  const breadcrumbGenerated = generateBreadcrumb('eventos', {
     name: events.title,
     url: events.slug
   });
@@ -47,7 +37,7 @@ export default function Events({ events }: {
           url: `https://www.fisioempreendedor.com.br/eventos/${events.slug}`,
           images: [
             {
-              url: `https://www.fisioempreendedor.com.br/eventos${events.ogImage.url}`,
+              url: `https://www.fisioempreendedor.com.br/${events.ogImage.url}`,
               alt: title,
             },
           ],
@@ -60,7 +50,7 @@ export default function Events({ events }: {
           <article>
             <div className='flex flex-col gap-4'>
               <Breadcrumbs variant='solid'>
-                {linksConcat.map(link => (
+                {breadcrumbGenerated.map(link => (
                   <BreadcrumbItem key={link.name} href={link.url}>
                     {link.name}
                   </BreadcrumbItem>

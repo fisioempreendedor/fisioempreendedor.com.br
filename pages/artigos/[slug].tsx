@@ -7,19 +7,9 @@ import type PostType from '@/types/post'
 import { BreadcrumbItem, Breadcrumbs, Card, CardBody, Spinner, User } from "@nextui-org/react";
 import markdownStyles from '@/styles/markdown-styles.module.css'
 import Comment from '@/components/Comment'
-import { NAME } from '@/utils/constants'
+import { NAME, ROLE } from '@/utils/constants'
 import { NextSeo } from 'next-seo'
-
-const links = [
-  {
-    name: 'Home',
-    url: '/'
-  },
-  {
-    name: 'Artigos',
-    url: '/artigos'
-  },
-]
+import generateBreadcrumb from '@/utils/generateBreadcrumb'
 
 export default function Post({ post }: {
   post: PostType
@@ -29,10 +19,12 @@ export default function Post({ post }: {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  const linksConcat = links.concat({
+
+  const breadcrumbGenerated = generateBreadcrumb('artigos', {
     name: post.title,
     url: post.slug
   });
+
   return (
     <>
       <NextSeo
@@ -45,7 +37,7 @@ export default function Post({ post }: {
           url: `https://www.fisioempreendedor.com.br/artigos/${post.slug}`,
           images: [
             {
-              url: `https://www.fisioempreendedor.com.br/artigos${post.ogImage.url}`,
+              url: `https://www.fisioempreendedor.com.br/${post.ogImage.url}`,
               alt: title,
             },
           ],
@@ -57,7 +49,7 @@ export default function Post({ post }: {
         ) : (
           <article className='flex flex-col gap-4'>
             <Breadcrumbs variant='solid'>
-              {linksConcat.map(link => (
+              {breadcrumbGenerated.map(link => (
                 <BreadcrumbItem key={link.name} href={link.url}>
                   {link.name}
                 </BreadcrumbItem>
@@ -69,7 +61,7 @@ export default function Post({ post }: {
                 <div className="flex w-full justify-center bg-background rounded-lg">
                   <CoverImage title={post.title} src={post.coverImage} />
                 </div>
-                <User name={post.author.name} description="Mentora de Fisioterapeutas" avatarProps={{ src: post.author.picture }} />
+                <User name={post.author.name} description={ROLE} avatarProps={{ src: post.author.picture }} />
                 <div
                   className={markdownStyles['markdown']}
                   dangerouslySetInnerHTML={{ __html: post.content }}
