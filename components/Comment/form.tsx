@@ -15,7 +15,7 @@ export default function CommentForm({
   onSubmit,
   post
 }: CommentFormProps) {
-  const { isAuthenticated, logout, loginWithPopup } = useAuth0()
+  const { isAuthenticated, logout, loginWithRedirect  } = useAuth0()
 
   return (
     <form onSubmit={onSubmit} className='flex flex-col gap-8'>
@@ -40,7 +40,7 @@ export default function CommentForm({
       <div className="flex items-center gap-4">
         {!isAuthenticated && (
           <>
-            <Button className="bg-secondary text-background rounded-lg hover:text-primary" onClick={() => loginWithPopup()}>
+            <Button className="bg-secondary text-background rounded-lg hover:text-primary" onClick={() => loginWithRedirect()}>
               Faça o login 
             </Button>
           </>

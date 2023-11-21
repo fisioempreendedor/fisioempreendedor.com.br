@@ -13,6 +13,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <Auth0Provider
       clientId={String(process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID)}
       domain={String(process.env.NEXT_PUBLIC_AUTH0_DOMAIN)}
+      authorizationParams={{
+        redirect_uri: typeof window !== "undefined" ? window.location.origin : '/'
+      }}
     >
       <SEO />
       <Head>
