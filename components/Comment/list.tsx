@@ -13,7 +13,7 @@ export default function CommentList({ comments, onDelete }: CommentListProps) {
   const { user } = useAuth0()
   return (
     <div className="flex flex-col gap-8">
-      {!!comments ? (
+      {!!comments && comments.length < 0 ? (
         <>
           <h2 className="text-3xl font-bold text-secondary">Comentários</h2>
           {comments?.map((comment, index) => {

@@ -27,7 +27,7 @@ export default function CommentForm({
           placeholder={
             isAuthenticated
               ? `Deixe seu comentário sobre o artigo ${post.title}`
-              : `Faça o login para deixar seu comentário sobre o artigo ${post.title}`
+              : `Faça o login para deixar seu comentário sobre o artigo - ${post.title}`
           }
           onChange={(e) => setText(e.target.value)}
           value={limit(text, 280)}
@@ -41,21 +41,20 @@ export default function CommentForm({
         {!isAuthenticated && (
           <>
             <Button className="bg-secondary text-background rounded-lg hover:text-primary" onClick={() => loginWithPopup()}>
-              Faça o login
+              Faça o login 
             </Button>
-            e
           </>
         )}
-        <div className="flex items-center justify-between w-full">
-          <Button type='submit' className="bg-secondary text-background rounded-lg hover:text-primary" isDisabled={!isAuthenticated || text.length === 0}>
-            Enviar
-          </Button>
-          {isAuthenticated && (
+        {isAuthenticated && (
+          <div className="flex items-center justify-between w-full">
+            <Button type='submit' className="bg-secondary text-background rounded-lg hover:text-primary" isDisabled={!isAuthenticated || text.length === 0}>
+              Enviar
+            </Button>
             <Button className="bg-transparent text-secondary rounded-lg hover:bg-background" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
               Sair
             </Button>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </form>
   )
