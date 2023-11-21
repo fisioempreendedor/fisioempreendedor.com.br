@@ -1,6 +1,7 @@
 import { Header } from '@/components'
 import { ButtonHelp } from './Button';
 import { Card, CardFooter } from '@nextui-org/react';
+import { NAME } from '@/utils/constants';
 
 const Layout = ({ children, title }: { children: React.ReactNode; title?: string; }) => {
   const date = new Date();
@@ -15,9 +16,8 @@ const Layout = ({ children, title }: { children: React.ReactNode; title?: string
           </main>
         </div>
         <Card className='rounded-none bg-background w-full flex items-center'>
-          <CardFooter className='rounded-none h-[64px] container mx-auto flex items-center justify-between px-8 m-0 text-primary'>
-            <p>Copyright© {date.getFullYear()}</p>
-            <p>Desenvolvido por @twobanks</p>
+          <CardFooter className='rounded-none h-[64px] container mx-auto flex items-center justify-center px-8 m-0 text-primary'>
+            <div><strong className='text-secondary'>{NAME}</strong> © {date.getFullYear()}</div>
           </CardFooter>
         </Card>
       </div>
