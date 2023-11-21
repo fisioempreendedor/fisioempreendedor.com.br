@@ -76,9 +76,9 @@ export default function Post({ post }: {
                 />
               </CardBody>
             </Card>
-            {/* <Card className='flex flex-col gap-8 p-8'>
+            <Card className='flex flex-col gap-8 p-8'>
               <Comment post={post} />
-            </Card> */}
+            </Card>
           </article>
         )}
       </Layout>
