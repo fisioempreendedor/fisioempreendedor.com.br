@@ -25,8 +25,8 @@ export default function Index({ allEvents, allPosts }: { allEvents: EventsType[]
       </Card>
       <Events allEvents={allEvents[0]} />
       <Articles allPosts={allPosts} />
-      <Depositions />
       <Downloads />
+      <Depositions />
     </Layout>
   )
 }

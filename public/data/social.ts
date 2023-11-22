@@ -16,7 +16,7 @@ export const socialMedia: {
     icon: (colorIcon?: string) => WhatsApp({colorIcon})
   },
   {
-    url: 'mailto:carolinelcosta@yahoo.com.br',
+    url: 'mailto:carolinelcosta2@gmail.com',
     name: 'Email',
     icon: Email
   },

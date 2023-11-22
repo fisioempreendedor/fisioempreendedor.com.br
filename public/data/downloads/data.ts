@@ -11,6 +11,7 @@ export const downloads = [
   },
   {
     name: 'Business Model Canvas',
+    description: 'O Business Model Canvas é uma ferramenta de planejamento estratégico, que permite montar um esboço mais simples de um novo modelo de negócios ou um já existente.',
     url: '/data/downloads/material_gratuito_business_model_canvas.pdf'
   },
 ]

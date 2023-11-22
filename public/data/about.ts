@@ -10,10 +10,6 @@ export const data_about = {
       title: 'Missão',
       text: 'Levar educação em gestão empresarial para que Fisioterapeutas tenham mais sucesso em seus negócios.',
     },
-    {
-      title: 'Visão',
-      text: 'Ser referência como Mentora de Fisioterapeutas, especialista em gestão empresarial na cidade de Uberlândia – MG até 2024.',
-    }
   ],
   experiences: [
     {

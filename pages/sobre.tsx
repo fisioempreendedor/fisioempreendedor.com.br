@@ -71,10 +71,10 @@ const AboutPage = () => (
           <div className='flex flex-col w-full gap-8'>
             <div className='flex flex-col gap-8'>
               <h2 className="text-3xl font-bold text-secondary">A Fisioempreendedor</h2>
-              <div className='flex flex-col gap-8 md:flex-row'>
+              <div className='flex w-full'>
                 {data_about.company.map(item => (
-                  <Card key={item.title}>
-                    <CardBody className='flex flex-col gap-4 p-6 bg-background'>
+                  <Card key={item.title} className='w-full'>
+                    <CardBody className='flex flex-col gap-4 p-6 bg-background w-full'>
                       <h4 className="text-xl font-bold">{item.title}</h4>
                       <p>{item.text}</p>
                     </CardBody>
