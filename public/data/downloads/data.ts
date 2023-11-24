@@ -7,7 +7,7 @@ export const downloads = [
   {
     name: 'P.D.C.A',
     description: 'P.D.C.A. é uma metodologia de gerenciamento que pode ser utilizada qualquer situação ou departamento.',
-    url: '/data/downloads/material_pdca.pdf'
+    url: '/data/downloads/material_gratuito_pdca.pdf'
   },
   {
     name: 'Business Model Canvas',
