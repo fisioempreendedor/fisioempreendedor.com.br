@@ -45,7 +45,7 @@ export const data_about = {
     },
     {
       title: 'Valorização a educação',
-      text: 'Acredita-se que é a educação é o que rege qualquer base. Tudo se cria, aperfeiçoa ou se modifica através do aprendizado. Aqueles que estão abertos ao conhecimento consegue não apenas encontrar o caminho, como também criar um. ',
+      text: 'Acredita-se que é a educação é o que rege qualquer base. Tudo se cria, aperfeiçoa ou se modifica através do aprendizado. Aqueles que estão abertos ao conhecimento consegue não apenas encontrar o caminho, como também criar um.',
     },
     {
       title: 'Bom Humor',
@@ -53,7 +53,7 @@ export const data_about = {
     },
     {
       title: 'Humanização',
-      text: 'Assim como nos tratamentos fisioterapêuticos, lidamos com pessoas. E é impossível não considerarmos suas especificidades e individualidade. Por isso, atender olhando o indivíduo como um todo e adaptando as estratégias ao seu perfil e realidade é importantíssimo para alçarem novos voos. ',
+      text: 'Assim como nos tratamentos fisioterapêuticos, lidamos com pessoas. E é impossível não considerarmos suas especificidades e individualidades. Por isso, atender olhando o indivíduo como um todo e adaptando as estratégias ao seu perfil e realidade é importantíssimo para alçarem novos voos. ',
     },
     {
       title: 'Compromisso',
