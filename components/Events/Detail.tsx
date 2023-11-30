@@ -8,7 +8,7 @@ const Detail = ({ nextEvent }: { nextEvent: EventsType; }) => (
     <Card className="p-0">
       <CardBody className="p-0">
         <div className="flex flex-col gap-4">
-          <Image className="rounded-none" src="/assets/events/2.webp" alt={nextEvent.title} height={500} width={500} />
+          <Image className="rounded-none" src="/assets/events/vendas-marketing-estudios-pilates.webp" alt={nextEvent.title} height={500} width={500} />
           <div className="flex flex-col gap-4 p-4">
             <h5 className="text-sm uppercase bg-background py-4 flex justify-center rounded-lg gap-1">exclusivo para <strong className="font-bold text-secondary">fisioterapeutas</strong></h5>
             <ul className="flex flex-col pl-6">
@@ -23,7 +23,7 @@ const Detail = ({ nextEvent }: { nextEvent: EventsType; }) => (
                 )
               })}
             </ul>
-            <ButtonRegistry url={`https://wa.me/5534988883448?text=Olá, Carol. Quero me inscrever no evento ${nextEvent.title}.`} type="full" />
+            {/* <ButtonRegistry url={`https://wa.me/5534988883448?text=Olá, Carol. Quero me inscrever no evento ${nextEvent.title}.`} type="full" /> */}
           </div>
         </div>
       </CardBody>

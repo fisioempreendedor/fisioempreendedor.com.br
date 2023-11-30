@@ -1,14 +1,14 @@
 ---
 title: 'Vendas e Marketing para Estúdios de Pilates'
 excerpt: 'Se você estava neste EXATO MOMENTO pensando que precisa de mais clientes/pacientes, que novembro e dezembro sempre tem queda na agenda (e din-din), este é o curso certo pra você.'
-coverImage: '/assets/events/2.webp'
+coverImage: '/assets/events/vendas-marketing-estudios-pilates.webp'
 date: '2023-12-02T05:35:07.322Z '
 infos: ['100% online e ao vivo', 'Material de apoio', 'Planejamento e Plano de Ações', 'Suporte individualizado por duas semanas', 'VAGAS LIMITADAS']
 author:
   name: Carol Lima
   picture: '/assets/5.webp'
 ogImage:
-  url: '/assets/events/2.webp'
+  url: '/assets/events/vendas-marketing-estudios-pilates.webp'
 ---
 
 Se você estava neste EXATO MOMENTO pensando que precisa de mais clientes/pacientes, que novembro e dezembro sempre tem queda na agenda (e din-din), este é o curso certo pra você.

@@ -45,7 +45,7 @@ export const data_about = {
     },
     {
       title: 'Valorização a educação',
-      text: 'Acredita-se que é a educação é o que rege qualquer base. Tudo se cria, aperfeiçoa ou se modifica através do aprendizado. Aqueles que estão abertos ao conhecimento consegue não apenas encontrar o caminho, como também criar um.',
+      text: 'Tudo se cria, aperfeiçoa ou se modifica através do aprendizado. Aqueles que estão abertos ao conhecimento consegue não apenas encontrar o caminho, como também criar um.',
     },
     {
       title: 'Bom Humor',

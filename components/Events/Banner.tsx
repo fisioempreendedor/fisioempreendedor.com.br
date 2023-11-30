@@ -6,7 +6,7 @@ const Banner = ({ nextEvent  }: { nextEvent?: EventsType }) => (
   <Card>
     <CardBody className="p-0">
       <div className='flex flex-col gap-8 lg:flex-row items-center bg-background'>
-        <Image src="/assets/events/2.webp" className="rounded-none"alt={nextEvent?.title} height={400} width={400} />
+        <Image src="/assets/events/vendas-marketing-estudios-pilates.webp" className="rounded-none"alt={nextEvent?.title} height={400} width={400} />
         <div className="flex flex-col gap-4 flex-1 p-4">
           <Link href={`eventos/${nextEvent?.slug}`} className="text-3xl font-bold hover:text-secondary">
             {nextEvent?.title}
