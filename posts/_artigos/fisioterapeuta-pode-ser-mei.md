@@ -61,7 +61,3 @@ Ah! É importante ressaltar que não há necessidade alguma de ter uma sociedade
 De qualquer maneira, apesar de não termos aprendido isso durante nossa formação na graduação, que é predominantemente técnica, ainda somos refém deste modelo e ele deve fazer parte do nosso conhecimento. Na dúvida contrate profissionais que podem te auxiliar, como por exemplo uma mentoria que te auxilia em todos os itens que você precisar da sua carreira. 
 
 Lembre-se, investir na mentoria é melhor do que perder dinheiro por falta de conhecimento. 
-
-https://www.contabilizei.com.br/contabilidade-online/fisioterapeuta-autonomo/
-https://www.contabilizei.com.br/contabilidade-online/fisioterapeuta-nao-pode-ser-mei/
-https://agilize.com.br/blog/abertura-de-empresa/fisioterapeuta-pode-ser-mei/
