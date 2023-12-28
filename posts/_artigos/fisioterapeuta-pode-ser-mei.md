@@ -1,13 +1,13 @@
 ---
-title: 'Fisioterapeuta pode ser MEI?'
+title: 'Fisioterapeuta: Autônomo, profissional liberal, me ou mei?'
 excerpt: 'Já vou adiantando que a resposta é “NÃO, FISIOTERAPEUTA NÃO PODE SER MEI.”'
-coverImage: '/assets/blog/artigo_mei.webp'
+coverImage: '/assets/blog/artigo_mei.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Carol Lima
   picture: '/assets/5.webp'
 ogImage:
-  url: '/assets/blog/artigo_mei.webp'
+  url: '/assets/blog/artigo_mei.jpg'
 ---
 
 ## O que é MEI?
