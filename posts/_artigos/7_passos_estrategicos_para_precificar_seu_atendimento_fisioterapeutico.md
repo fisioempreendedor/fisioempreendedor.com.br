@@ -1,13 +1,13 @@
 ---
 title: '7 passos estratégicos para precificar seu atendimento fisioterapêutico'
 excerpt: 'Aplique agora 7 passos estratégicos importantíssimos para você determinar o preço do seu atendimento...'
-coverImage: '/assets/blog/7_passos.jpg'
+coverImage: '/assets/blog/7_passos.webp'
 date: '2023-12-28T05:35:07.322Z'
 author:
   name: Carol Lima
   picture: '/assets/5.webp'
 ogImage:
-  url: '/assets/blog/7_passos.jpg'
+  url: '/assets/blog/7_passos.webp'
 ---
 
 **Aplique agora 7 passos estratégicos importantíssimos para você determinar o preço do seu atendimento na Fisioterapia com mais assertividade e menos riscos.**
@@ -72,7 +72,7 @@ A cada ano é definido um valor para o CV, e no ano de 2023 o valor determinado 
 
 Mas calma! Não quer dizer que você pode cobrar no mínimo setenta e três centavos na sua consulta. abaixo, vou mostrar um exemplo para ilustrar melhor, e você entender com mais clareza.
 
-![image info](/assets/blog/tabela_RBRF.jpg)
+![image info](/assets/blog/tabela_RBRF.webp)
 
 Quando você olhar a tabela, você vai encontrar quatro colunas. Da esquerda para direita encontramos na primeira a última coluna o códigos RNPF, a descrição, o Referencial CV e o valor para 2023.
 
@@ -204,7 +204,7 @@ Para isso você deve seguir três simples etapas:
 
 ` `Exemplo da tabela (crie uma tabela para cada tipo de concorrente, direto ou indireto):
 
-![Tabela para cada tipo de concorrente, direto ou indireto](/assets/blog/tabela_estabelecimentos.jpg)
+![Tabela para cada tipo de concorrente, direto ou indireto](/assets/blog/tabela_estabelecimentos.webp)
 
 
 **Pesquisa de mercado- Clientes**
@@ -280,7 +280,7 @@ Ao final, some todos os gastos de cada um e o o total de gastos no mês. Segue o
 
 Tabela do mês de Dezembro de 2023
 
-![Tabela do mês de Dezembro de 2023](/assets/blog/tabela_concorrente.jpg)
+![Tabela do mês de Dezembro de 2023](/assets/blog/tabela_concorrente.webp)
 
 Perceba que registrando e qualificando seus gastos, você consegue ter uma visão mais clara do mínimo que você precisa ganhar, para suprir custos. Evidencia também onde você precisa mexer para reduzir esses gastos, e conseguir ter mais lucros ao final do mês. 
 
