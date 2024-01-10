@@ -184,7 +184,7 @@ não vá desistir no meio do caminho.
 
 *Caso você queria definir seus objetivos para o próximo ano e não esteja
 conseguindo, eu ofereço uma* *[MENTORIA
-GRATUITA](https://pt.semrush.com/swa/checker/Whatsapp%20wa.me/5534988883448?text=Oii%2C+quero+saber+mais+sobre+seus+servi%C3%A7os%21+%0A%281%29+Atendimento+fisioterap%C3%AAutico.%0A%282%29+Mentoria+e+cursos+sobre+Gest%C3%A3o+Empresarial+para+fisioterapeutas.+)
+GRATUITA](https://wa.me/5534988883448?text=Oii%2C+quero+saber+mais+sobre+seus+servi%C3%A7os%21+%0A%281%29+Atendimento+fisioterap%C3%AAutico.%0A%282%29+Mentoria+e+cursos+sobre+Gest%C3%A3o+Empresarial+para+fisioterapeutas.+)
 **de definição de objetivos e metas.** É só clicar que você entrará em
 contato diretamente comigo. Vale muito a pena!*
 
