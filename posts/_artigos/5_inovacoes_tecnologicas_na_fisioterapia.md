@@ -10,9 +10,9 @@ ogImage:
   url: '/assets/blog/5_inovacoes_tecnologicas_na_fisioterapia.webp'
 ---
 
-# Inovações tecnológicas na fisioterapia
+## 5 Inovações tecnológicas na fisioterapia
 
-## Impactos e oportunidades na gestão
+### Impactos e oportunidades na gestão
 
 Em um cenário onde a demanda por cuidados fisioterapêuticos é intensa e
 as rotinas muitas vezes exaustivas, os profissionais enfrentam desafios
@@ -273,7 +273,7 @@ Você acaba se diferenciar dos demais, se aprofundando mais nessa jornada
 de aperfeiçoamento constante.
 
 Caso você não faca ideia do que estou falando, corre lá no meu canal e
-assiste o vídeo \[*link youtube*\] que eu falo um pouco sobre o mesmo
+[assiste o vídeo](https://youtu.be/RjEMsiRBDaU?si=X-q3ClO1Wei4RsWX) que eu falo um pouco sobre o mesmo
 tema, mas de forma mais facil em uma vídeo aula.
 
 Por essa sua vontade de querer ser um profissional mais completo, vindo
@@ -283,7 +283,7 @@ aqui descobrir qual é o tópico extra, merece uma recompensa:
 
 **OBJETIVOS PARA 2024!**
 
-Exclusiva comigo! Então assim que finalizar esse artigo, [CLICA AQUI](https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5534988883448%3Ftext%3DOii%252C%2Bquero%2Bsaber%2Bmais%2Bsobre%2Bseus%2Bservi%25C3%25A7os%2521%2B%250A%25281%2529%2BAtendimento%2Bfisioterap%25C3%25AAutico.%250A%25282%2529%2BMentoria%2Be%2Bcursos%2Bsobre%2BGest%25C3%25A3o%2BEmpresarial%2Bpara%2Bfisioterapeutas.%2B%26fbclid%3DPAAabE3ZH1wFoko33tFJQ3g2kuOaskgBUFiKsMVztNX3xpDMwYNdRlh4-eeXE&e=AT0ri1sJl3-qKEoioixexOIlT_FGPM8uRBfR85VwA1cJjEysuW2TnxwPQidNsIgQXVX-N34nmXH5MO__ITO4SsFpHUsAMTfdqU4PctEcNJ9VQwH5crrqhA)
+Exclusiva comigo! Então assim que finalizar esse artigo, [CLICA AQUI](https://wa.me/5534988883448?text=Oii%2C+quero+saber+mais+sobre+seus+servi%C3%A7os%21+%0A%281%29+Atendimento+fisioterap%C3%AAutico.%0A%282%29+Mentoria+e+cursos+sobre+Gest%C3%A3o+Empresarial+para+fisioterapeutas.+)
 e vem conversar comigo que eu te explico os próximos passos.
 
 Finalmente, o tópico extra é:
